@@ -58,7 +58,6 @@ end
 # create action
 action :create do
   options = {}
-  Chef::Log.debug("wpar #{current_resource.wpar_state} ")
   if current_resource
     Chef::Log.info("wpar #{new_resource.wpar_name} already exist")
   else
